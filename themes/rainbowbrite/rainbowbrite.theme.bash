@@ -13,7 +13,7 @@ prompt_setter() {
   # displays user@server in purple
   # PS1="$red$(scm_char) $purple\u@\h$reset_color:$blue\w$yellow$(scm_prompt_info)$(rvm_version_prompt) $black\$$reset_color "
   # no user@server
-  PS1="$red$(scm_char) $blue\w$yellow$(scm_prompt_info)$(rvm_version_prompt) $black\$$reset_color "
+  PS1="$red$(scm_char) $bold_blue\w$yellow$(scm_prompt_info)$(rvm_version_prompt) $black\$$reset_color "
   PS2='> '
   PS4='+ '
 }
@@ -21,8 +21,8 @@ prompt_setter() {
 PROMPT_COMMAND=prompt_setter
 
 SCM_NONE_CHAR='·'
-SCM_THEME_PROMPT_DIRTY=" ${red}✗"
-SCM_THEME_PROMPT_CLEAN=" ${green}✓"
+SCM_THEME_PROMPT_DIRTY=" ${bold_red}✗"
+SCM_THEME_PROMPT_CLEAN=" ${bold_green}✓"
 SCM_THEME_PROMPT_PREFIX=" ("
 SCM_THEME_PROMPT_SUFFIX="${yellow})"
 RVM_THEME_PROMPT_PREFIX=" ("
