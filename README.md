@@ -1,3 +1,7 @@
+**Deprecated**
+
+I moved my `.bash_profile` stuff to [desandro/dotfiles](https://github.com/desandro/dotfiles)
+
 # Bash it
 
 **Bash it** is a mash up of my own bash commands and scripts, other bash stuff I have found. 
